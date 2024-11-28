@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐播放导航页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            width: 300px;
+            height: 250px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: white;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-info {
+            text-align: center;
+            width: 250px;
+            margin-top: 10px;
+        }
+
+        .card-info h4 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .card-info p {
+            font-size: 14px;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>请选择你想听的音乐</h1>
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card" onclick="window.location.href='https://music.100713.xyz//Stardew Valley Soundtrack';">  <!-- 请自行修改跳转链接 -->
+                <img src="https://music.100713.xyz/images/星露谷物语.png" alt="星露谷物语">  <!-- 修改图片路径 -->
+            </div>
+            <div class="card-info">
+                <h4>星露谷物语原声音轨</h4>  <!-- 名称 -->
+                <p>这是介绍</p>  <!-- 文字介绍 -->
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card-wrapper">
+                <div class="card" onclick="window.location.href='https://music.100713.xyz/Stardew Valley Soundtrack';">  <!-- 请自行修改跳转链接 -->
+                    <img src="https://music.100713.xyz/images/星露谷物语.png" alt="星露谷物语">  <!-- 修改图片路径 -->
+                </div>
+                <div class="card-info">
+                    <h4>星露谷物语原声音轨</h4>  <!-- 名称 -->
+                    <p>这是介绍</p>  <!-- 文字介绍 -->
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="card-wrapper">
+                    <div class="card" onclick="window.location.href='https://music.100713.xyz/Stardew Valley Soundtrack';">  <!-- 请自行修改跳转链接 -->
+                        <img src="https://music.100713.xyz/images/星露谷物语.png" alt="星露谷物语">  <!-- 修改图片路径 -->
+                    </div>
+                    <div class="card-info">
+                        <h4>星露谷物语原声音轨</h4>  <!-- 名称 -->
+                        <p>这是介绍</p>  <!-- 文字介绍 -->
+                    </div>
+                </div>
+        </div>
+</body>
+</html>
